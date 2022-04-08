@@ -1,0 +1,103 @@
+:root {
+    --vermelho: #E50914;
+    --preta: #141414
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+}
+
+
+header {
+    background-color: black;
+}
+
+ul, a {
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+ul, a:hover {
+    color: white;
+}
+
+header .container {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.logo {
+    color: var(--vermelho);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+/* Main Movie */
+
+
+main .main-movie {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0, .50), rgba(0,0,0, .50)), url(/img/house.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 600px;
+}
+
+.button {
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, .50);
+    border: 0;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 13px;
+    border-radius: 2px;
+}
+
+.button:hover {
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+    transition: .3s ease all;
+}
+
+.main-movie .description {
+    margin: 10px 0px 40px 0px;
+}
+
+.main-movie .title {
+    font-size: 40px;
+    margin-top: 15%;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.main-movie .container {
+    width: 70%;
+}
+
+.box-movie {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrossel-movies {
+    margin-top: 5px;
+}
